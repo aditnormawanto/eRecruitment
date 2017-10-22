@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2e19df9460b405c9bf4b6c9b32e97ca" Name="Diagram1">
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_AdditionalInfo" Width="1.5" PointX="3" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Certification" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Course" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Education" Width="1.5" PointX="3" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_EmergencyContact" Width="1.5" PointX="3" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_FamilyAndSpouse" Width="1.5" PointX="3" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_JobExp" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Language" Width="1.5" PointX="3" PointY="32.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_OrganizationalHistory" Width="1.5" PointX="3" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Reference" Width="1.5" PointX="3" PointY="38.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Cand_Skill" Width="1.5" PointX="3" PointY="42.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Candidate" Width="1.5" PointX="0.75" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.CandJobExp_Benefit" Width="1.5" PointX="5.25" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.CandJobExp_Responsibility" Width="1.5" PointX="5.25" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Co_Directorat" Width="1.5" PointX="1.5" PointY="64.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Co_Divition" Width="1.5" PointX="1.5" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Co_Section" Width="1.5" PointX="1.5" PointY="52.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Co_SubDivition" Width="1.5" PointX="1.5" PointY="56.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Emp_Position" Width="1.5" PointX="12.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Employee" Width="1.5" PointX="10.5" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Job_App" Width="1.5" PointX="6" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Job_Desc" Width="1.5" PointX="6" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Job_Requirement" Width="1.5" PointX="6" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Job_Title" Width="1.5" PointX="1.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Job_Vacancy" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.JobApp_Phase" Width="1.5" PointX="8.25" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.JobApp_Task" Width="1.5" PointX="10.5" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.JobApp_TaskAttender" Width="1.5" PointX="12.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.JobApp_TaskHistory" Width="1.5" PointX="12.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Ref_Master" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Ref_User" Width="1.5" PointX="3" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.Ref_UserEmployee" Width="1.5" PointX="12.75" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.DATA_WILAYAH_INDONESIA" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="eRecruitmentModel.REF_KODEPOS" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_AdditionalInfo_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Certification_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Course_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Education_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_EmergencyContact_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_FamilyAndSpouse_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_JobExp_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_CandJobExp_Benefit_Cand_JobExp" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_CandJobExp_Responsibility_Cand_JobExp" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Language_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_OrganizationalHistory_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Reference_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Cand_Skill_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_App_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Ref_User_Candidate" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Co_Divition_Co_Directorat" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Co_SubDivition_Co_Divition" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Co_Section_Co_SubDivition" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_Title_Co_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Emp_Position_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Emp_Position_Job_Title" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_JobApp_TaskAttender_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Ref_UserEmployee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_App_Job_Vacancy" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_JobApp_Phase_Job_App" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_Desc_Job_Vacancy" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_Requirement_Job_Vacancy" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_Job_Vacancy_Job_Title" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_JobApp_Task_JobApp_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_JobApp_TaskAttender_JobApp_Task" ManuallyRouted="false" />
+        <AssociationConnector Association="eRecruitmentModel.FK_JobApp_TaskHistory_JobApp_Task" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -60,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -160,6 +161,123 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataAccess\Candidate.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\CandJobExp_Benefit.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\CandJobExp_Responsibility.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_AdditionalInfo.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Certification.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Course.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Education.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_EmergencyContact.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_FamilyAndSpouse.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_JobExp.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Language.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_OrganizationalHistory.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Reference.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Cand_Skill.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Co_Directorat.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Co_Divition.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Co_Section.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Co_SubDivition.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DATA_WILAYAH_INDONESIA.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Employee.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Emp_Position.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\eRecruitment.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eRecruitment.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\eRecruitment.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\eRecruitment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eRecruitment.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\JobApp_Phase.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\JobApp_Task.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\JobApp_TaskAttender.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\JobApp_TaskHistory.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Job_App.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Job_Desc.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Job_Requirement.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Job_Title.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Job_Vacancy.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\REF_KODEPOS.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Ref_Master.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Ref_User.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Ref_UserEmployee.cs">
+      <DependentUpon>eRecruitment.tt</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,6 +287,16 @@
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DataAccess\eRecruitment.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>eRecruitment.edmx</DependentUpon>
+      <LastGenOutput>eRecruitment.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataAccess\eRecruitment.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>eRecruitment.edmx</DependentUpon>
+      <LastGenOutput>eRecruitment.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -193,6 +321,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <EntityDeploy Include="DataAccess\eRecruitment.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>eRecruitment.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="DataAccess\eRecruitment.edmx.diagram">
+      <DependentUpon>eRecruitment.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -215,7 +350,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
