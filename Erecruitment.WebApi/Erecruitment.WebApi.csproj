@@ -160,6 +160,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\ZipcodeController.cs" />
     <Compile Include="DataAccess\Candidate.cs">
       <DependentUpon>eRecruitment.tt</DependentUpon>
     </Compile>
@@ -281,6 +282,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TeritoryService.cs" />
+    <Compile Include="Services\ZipcodeService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
