@@ -18,5 +18,31 @@ namespace Erecruitment.WebApi.Controllers
             var result = service.Get();
             return Ok(result);
         }
+
+        //public IHttpActionResult GetByCode(string code)
+        //{
+        //    var result = service.GetByCode(code);
+        //    return Ok(result);
+        //}
+
+        //public IHttpActionResult GetByKelurahan(string kel)
+        //{
+
+        //}
+
+        //public IHttpActionResult GetByKecamatan(string kec)
+        //{
+
+        //}
+
+        //public IHttpActionResult GetByKotamadya(string kot)
+        //{
+
+        //}
+
+        //public IHttpActionResult GetByPrivinsi(string prov)
+        //{
+
+        //}
     }
 }
