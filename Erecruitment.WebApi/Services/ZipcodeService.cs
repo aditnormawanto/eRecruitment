@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Erecruitment.WebApi.DataAccess;
+using Erecruitment.WebApi.DataAccess.Repositories;
 using System.IO;
 using Newtonsoft.Json;
 
@@ -11,10 +12,17 @@ namespace Erecruitment.WebApi.Services
 {
     public class ZipcodeService
     {
+        ZipcodeRepository repository = new ZipcodeRepository();
+
         public object Get()
         {
             string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
             return JsonConvert.DeserializeObject(jsonString);
+        }
+
+        public ICollection<REF_KODEPOS> GetByZipcode(string code)
+        {
+            return repository.GetByZipcode(code);
         }
 
         //public object GetByCode(string code)

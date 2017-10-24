@@ -11,9 +11,9 @@ namespace Erecruitment.WebApi.DataAccess
     {
         protected eRecruitmentEntities _context;
         
-        public Repository(eRecruitmentEntities context)
+        public Repository()
         {
-            _context = context;
+            _context = new eRecruitmentEntities();
         }
         
         public tEntity Get(int id)

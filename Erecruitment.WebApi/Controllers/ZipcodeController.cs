@@ -19,6 +19,21 @@ namespace Erecruitment.WebApi.Controllers
             return Ok(result);
         }
 
+        [Route("api/zipcode/t1/{code}")]
+        public IHttpActionResult GetByZipcode(string code)
+        {
+            var result = service.GetByZipcode(code);
+
+            if (result != null)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
         //public IHttpActionResult GetByCode(string code)
         //{
         //    var result = service.GetByCode(code);
