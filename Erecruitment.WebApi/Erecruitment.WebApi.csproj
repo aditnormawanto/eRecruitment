@@ -278,6 +278,7 @@
     <Compile Include="DataAccess\Ref_UserEmployee.cs">
       <DependentUpon>eRecruitment.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\Repository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
