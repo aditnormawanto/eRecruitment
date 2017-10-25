@@ -14,52 +14,29 @@ namespace Erecruitment.WebApi.Services
     {
         ZipcodeRepository repository = new ZipcodeRepository();
 
-        public object Get()
-        {
-            string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
-            return JsonConvert.DeserializeObject(jsonString);
-        }
-
         public ICollection<REF_KODEPOS> GetByZipcode(string code)
         {
             return repository.GetByZipcode(code);
         }
 
-        //public object GetByCode(string code)
-        //{
-        //    string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
+        public ICollection<REF_KODEPOS> GetByKelurahan(string kel)
+        {
+            return repository.GetByKelurahan(kel);
+        }
 
-        //    //JObject[] obj = JObject.Parse(jsonString);
+        public ICollection<REF_KODEPOS> GetByKecamatan(string kec)
+        {
+            return repository.GetByKecamatan(kec);
+        }
 
-        //    //JObject objResult = obj[""].Values<JObject>()
-        //    //    .Where(m => m["KODEPOS"].Value<string>() == code)
-        //    //    .FirstOrDefault();
+        public ICollection<REF_KODEPOS> GetByKotamadya(string kot)
+        {
+            return repository.GetByKotamadya(kot);
+        }
 
-        //    return objResult.ToString(Formatting.None);
-        //}
-
-        //public object GetByKelurahan(string kel)
-        //{
-        //    string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
-        //    return JsonConvert.DeserializeObject(jsonString);
-        //}
-
-        //public object GetByKecamatan(string kec)
-        //{
-        //    string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
-        //    return JsonConvert.DeserializeObject(jsonString);
-        //}
-
-        //public object GetByKotamadya(string kot)
-        //{
-        //    string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
-        //    return JsonConvert.DeserializeObject(jsonString);
-        //}
-
-        //public object GetByProvinsi(string prov)
-        //{
-        //    string jsonString = File.ReadAllText(HttpContext.Current.Server.MapPath("~/App_Data/REF_KODEPOS.json"));
-        //    return JsonConvert.DeserializeObject(jsonString);
-        //}
+        public ICollection<REF_KODEPOS> GetByProvinsi(string prov)
+        {
+            return repository.GetByProvinsi(prov);
+        }
     }
 }
