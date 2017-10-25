@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Erecruitment.WebApi.DataAccess;
 using Erecruitment.WebApi.Services;
+using System.Threading.Tasks;
 
 namespace Erecruitment.WebApi.Controllers
 {
@@ -77,6 +78,81 @@ namespace Erecruitment.WebApi.Controllers
         public IHttpActionResult GetByPrivinsi(string prov)
         {
             var result = service.GetByZipcode(prov);
+
+            if (result.Count != 0)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [Route("api/zipcode/t6/{code}")]
+        public async Task<IHttpActionResult> GetByZipcodeAsync(string code)
+        {
+            var result = await service.GetByZipcodeAsync(code);
+
+            if (result.Count != 0)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [Route("api/zipcode/t7/{kel}")]
+        public async Task<IHttpActionResult> GetByKelurahanAsync(string kel)
+        {
+            var result = await service.GetByZipcodeAsync(kel);
+
+            if (result.Count != 0)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [Route("api/zipcode/t8/{kec}")]
+        public async Task<IHttpActionResult> GetByKecamatanAsync(string kec)
+        {
+            var result = await service.GetByZipcodeAsync(kec);
+
+            if (result.Count != 0)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [Route("api/zipcode/t9/{kot}")]
+        public async Task<IHttpActionResult> GetByKotamadyaAsync(string kot)
+        {
+            var result = await service.GetByZipcodeAsync(kot);
+
+            if (result.Count != 0)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [Route("api/zipcode/t10/{prov}")]
+        public async Task<IHttpActionResult> GetByPrivinsiAsync(string prov)
+        {
+            var result = await service.GetByZipcodeAsync(prov);
 
             if (result.Count != 0)
             {
