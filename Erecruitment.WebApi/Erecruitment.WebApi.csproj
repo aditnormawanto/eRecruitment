@@ -159,7 +159,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\TeritoryController.cs" />
     <Compile Include="Controllers\ZipcodeController.cs" />
     <Compile Include="DataAccess\Candidate.cs">
       <DependentUpon>eRecruitment.tt</DependentUpon>
@@ -278,6 +278,7 @@
     <Compile Include="DataAccess\Ref_UserEmployee.cs">
       <DependentUpon>eRecruitment.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\Repositories\TeritoryRepository.cs" />
     <Compile Include="DataAccess\Repositories\ZipcodeRepository.cs" />
     <Compile Include="DataAccess\Repository.cs" />
     <Compile Include="Global.asax.cs">
