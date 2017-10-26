@@ -75,7 +75,7 @@ namespace Erecruitment.WebApi.Controllers
         }
 
         [Route("api/zipcode/t5/{prov}")]
-        public IHttpActionResult GetByPrivinsi(string prov)
+        public IHttpActionResult GetByProvinsi(string prov)
         {
             var result = service.GetByZipcode(prov);
 
